@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okhia Tesla | Exclusive Deals</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --accent-red: #e50914;
+            --text-main: #ffffff;
+            --text-sub: #9ca3af;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #2a2e39;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            color: var(--accent-red);
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease;
+            border: 1px solid #2d323e;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--text-sub);
+            font-size: 1rem;
+        }
+
+        .discount-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #22c55e;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--accent-red);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--accent-red);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #b80710;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Okhia Tesla</h1>
+        <p>Special Promotion: 50% Off All Models</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <!-- Model 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=500&q=80" alt="Tesla Cybertruck">
+                <div class="card-content">
+                    <span class="badge">50% OFF</span>
+                    <h2 class="card-title">Cybertruck</h2>
+                    <div class="price-container">
+                        <span class="original-price">$100,000</span>
+                        <span class="discount-price">$50,000</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Model 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500&q=80" alt="Tesla Model S">
+                <div class="card-content">
+                    <span class="badge">50% OFF</span>
+                    <h2 class="card-title">Model S</h2>
+                    <div class="price-container">
+                        <span class="original-price">$90,000</span>
+                        <span class="discount-price">$45,000</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Model 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=500&q=80" alt="Tesla Model X">
+                <div class="card-content">
+                    <span class="badge">50% OFF</span>
+                    <h2 class="card-title">Model X</h2>
+                    <div class="price-container">
+                        <span class="original-price">$100,000</span>
+                        <span class="discount-price">$50,000</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Model 4 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=500&q=80" alt="Tesla Model 3">
+                <div class="card-content">
+                    <span class="badge">50% OFF</span>
+                    <h2 class="card-title">Model 3</h2>
+                    <div class="price-container">
+                        <span class="original-price">$40,000</span>
+                        <span class="discount-price">$20,000</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Model 5 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571127236794-81c0172628a1?w=500&q=80" alt="Tesla Model Y">
+                <div class="card-content">
+                    <span class="badge">50% OFF</span>
+                    <h2 class="card-title">Model Y</h2>
+                    <div class="price-container">
+                        <span class="original-price">$50,000</span>
+                        <span class="discount-price">$25,000</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Model 6 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&q=80" alt="Tesla Roadster">
+                <div class="card-content">
+                    <span class="badge">50% OFF</span>
+                    <h2 class="card-title">Roadster</h2>
+                    <div class="price-container">
+                        <span class="original-price">$200,000</span>
+                        <span class="discount-price">$100,000</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
